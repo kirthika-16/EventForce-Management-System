@@ -111,7 +111,7 @@ EventForce-Salesforce/
 └── README.md
 ```
 
-> Adjust this structure to match what you actually upload.
+
 
 ## 📝 Deployment Note
 
