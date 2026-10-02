@@ -113,28 +113,6 @@ EventForce-Salesforce/
 
 > Adjust this structure to match what you actually upload.
 
-## 🚀 Setup Instructions
-
-1. Create a free [Salesforce Developer Edition Org](https://developer.salesforce.com/signup).
-2. Clone this repository:
-```bash
-   git clone https://github.com/<your-username>/EventForce-Salesforce.git
-   cd EventForce-Salesforce
-```
-3. Install the [Salesforce CLI](https://developer.salesforce.com/tools/salesforcecli) and log in:
-```bash
-   sf org login web --alias eventforce-dev
-```
-4. Deploy the metadata:
-```bash
-   sf project deploy start --source-dir force-app --target-org eventforce-dev
-```
-5. Open the org and launch **Event Planner** from the App Launcher:
-```bash
-   sf org open --target-org eventforce-dev
-```
-6. Create sample records (at least 10 per object) and schedule `ScheduleCompleteEvents` from **Setup → Apex Classes → Schedule Apex**.
-
 ## 📝 Deployment Note
 
 All work was built and tested in a **Developer Edition Org**, which is a standalone environment. A real production deployment would use sandboxes, change sets, or DevOps tools such as GitHub CI/CD pipelines and Salesforce DX. This project simulates that process by keeping metadata structured, version-controlled, and ready for migration.
